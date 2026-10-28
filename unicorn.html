@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> My Unicorn</title>
+
+        <style>
+            
+            body {
+                background: linear-gradient(
+                    135deg,
+                    #c7d2fe,
+                    #ddd6fe,
+                    #fbcfe8
+                );
+                
+                min-height: 100vh;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .unicorn {
+                font-size: 150px;
+                animation: float 3s ease-in-out infinite;
+            }
+            
+            @keyframes float {
+                0% {
+                    transform:translateY(0px);
+                }
+
+                50% {
+                    transform:translateY(-20px);  
+                }
+
+                100% {
+                    transform:translateY(0px);
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="unicorn">
+            🦄
+        </div>
+    </body>
+</html>
