@@ -48,18 +48,3 @@ nav a:hover {
     justify-content: center;
     gap: 30px;
 }
-button {
-    background-color: #7c5cff;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 15px;
-    cursor: pointer;
-}
-button:hover {
-    background-color: #6a4be8;
-}
-#prompt {
-    margin: 20px;
-    font-size: 1.2rem;
-}

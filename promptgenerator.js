@@ -1,14 +1,17 @@
-const prompts = [
-    "Write about Vampires.",
-    "Write about a Theif",
-    "Write about a Ghost"
+const words = [
+    "Apple",
+    "Banana",
+    "Cherry",
+    "Dragonfruit",
+    "Elderberry"
 ];
 
-const promptText = document.querySelector("#prompt");
-const button = document.querySelector("#generateBtn");
+const button = document.getElementById("generateBtn");
+const display = document.getElementById("wordDisplay");
 
 button.addEventListener("click", function() {
+    const randomIndex = Math.floor(Math.random() * words.length);
+    const randomWord = words[randomIndex];
 
-    const randonIndex = Math.floor(Math.random() * prompts.length);
-    promptText.textContent = prompts[randomIndex];
+    display.textContent = randomWord;
 });
